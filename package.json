@@ -1,8 +1,8 @@
 
 {
-  "name": "purplecart-ecommerce",
+  "name": "PinkCarts-ecommerce",
   "version": "1.0.0",
-  "description": "PurpleCart beginner e-commerce project",
+  "description": "PinkCarts beginner e-commerce project",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
