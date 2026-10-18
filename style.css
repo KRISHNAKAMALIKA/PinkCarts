@@ -321,3 +321,141 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* Separate Login and Registration pages */
+.auth-page {
+    min-height: 100vh;
+    margin: 0;
+    padding: 30px 16px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #fff0f6, #fce0ed, #ffffff);
+    font-family: Arial, sans-serif;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 420px;
+    box-sizing: border-box;
+    padding: 32px;
+    border-radius: 22px;
+    background: white;
+    box-shadow: 0 10px 40px rgba(180, 55, 110, 0.15);
+}
+
+.auth-logo {
+    display: block;
+    margin-bottom: 24px;
+    color: #d63384;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+.auth-card h1 {
+    margin-bottom: 8px;
+    color: #b52b6c;
+    text-align: center;
+}
+
+.auth-card > p {
+    color: #777;
+    text-align: center;
+}
+
+.auth-card label {
+    display: block;
+    margin: 16px 0 7px;
+    font-weight: bold;
+    color: #444;
+}
+
+.auth-card input {
+    width: 100%;
+    padding: 13px;
+    box-sizing: border-box;
+    border: 1px solid #e6b5cc;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.auth-card input:focus {
+    outline: 2px solid #e75491;
+    border-color: transparent;
+}
+
+.auth-submit,
+.google-button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.auth-submit {
+    color: white;
+    background: #e75491;
+    border: none;
+    font-weight: bold;
+}
+
+.auth-submit:hover {
+    background: #cc3979;
+}
+
+.auth-submit:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+.google-button {
+    margin-top: 0;
+    background: white;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+.google-button strong {
+    color: #4285f4;
+    margin-right: 8px;
+}
+
+.auth-divider {
+    margin: 20px 0;
+    text-align: center;
+    color: #999;
+}
+
+.auth-bottom {
+    margin-top: 22px;
+    font-size: 14px;
+}
+
+.auth-bottom a,
+.back-link {
+    color: #d63384;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back-link {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#message {
+    overflow-wrap: anywhere;
+    font-size: 14px;
+}
+
+@media (max-width: 480px) {
+    .auth-card {
+        padding: 24px 20px;
+    }
+}
