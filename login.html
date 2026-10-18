@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | PinkCarts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+    <div class="auth-card">
+        <a href="index.html" class="auth-logo">PinkCarts 💗</a>
+
+        <h1>Welcome Back!</h1>
+        <p>Login to continue shopping.</p>
+
+        <form id="login-form">
+            <label for="email">Email Address</label>
+            <input id="email" type="email"
+                   placeholder="Enter your email"
+                   autocomplete="email" required>
+
+            <label for="password">Password</label>
+            <input id="password" type="password"
+                   placeholder="Enter your password"
+                   autocomplete="current-password" required>
+
+            <button type="submit" class="auth-submit">
+                Login
+            </button>
+        </form>
+
+        <p id="message" role="status"></p>
+
+        <div class="auth-divider">OR</div>
+
+        <button type="button" class="google-button"
+                onclick="googleLogin()">
+            <strong>G</strong> Continue with Google
+        </button>
+
+        <p class="auth-bottom">
+            Don't have an account?
+            <a href="register.html">Create Account</a>
+        </p>
+
+        <a class="back-link" href="index.html">
+            ← Back to Shopping
+        </a>
+    </div>
+
+    <script src="auth-page.js"></script>
+</body>
+</html>
